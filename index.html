@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css">
+  <style></style>
+</head>
+
+<body>
+ <header><h1>Rock Paper Scissors - Game </h1> </header>
+ <main>
+ 
+    <button class="game" onclick="
+      let com=checkComputer();
+      let j=whoWin(`Rock`,com);
+      let i=score;
+      massage(`Rock` , com , j);">Rock</button>
+
+    <button class="game" onclick="
+      com=checkComputer();
+      j=whoWin(`Scissors`,com);
+      massage(`Scissors` , com , j);">Scissors</button>
+
+    <button class="game" onclick="
+      com=checkComputer();
+      j=whoWin(`Paper`,com);
+      massage(`Paper` , com , j);">Paper</button>
+  
+</main>
+<footer></footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
